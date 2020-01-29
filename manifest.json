@@ -1,0 +1,17 @@
+  {
+    "name": "raw-dev-art-downloader",
+    "version": "1.0",
+    "description": "Allows translators to download chapters from raw dev art.",
+      "permissions": ["downloads"],
+      "content_scripts": [
+          {
+              "matches": ["https://rawdevart.com/*"]
+              , "js": ["content.js"]
+      }
+      ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "manifest_version": 2
+  }
