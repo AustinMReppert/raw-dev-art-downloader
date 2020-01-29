@@ -8,5 +8,5 @@ const downloadImage = (images, imageNum) => {
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request === null || request.length === 0) return;
     for (i = 0; i < request.length; i++)
-        downloadImage.bind(request, i);
+        downloadImage(request, i);
 });
