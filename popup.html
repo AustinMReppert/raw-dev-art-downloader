@@ -3,16 +3,38 @@
 
 <head>
     <style>
-        button {
-            height: 30px;
-            width: 30px;
-            outline: none;
+        * {
+            user-select: none !important;
+        }
+
+        body {
+            height: 200px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #downloadChapter {
+            display: flex;
+            margin-top: 0.5em;
+            justify-content: center;
+            align-items: center;
+            padding: 7px 25px;
+            width: 120px;
+            font-weight: 600;
+            background: #2196f3;
+            color: #FEFEFE;
+            border: 1px solid black;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <button id="downloadChapter"></button>
+    <h2>Manga Downloader</h2>
+    <div id="downloadChapter">Download Chapter</div>
     <script src="popup.js"></script>
 </body>
 
